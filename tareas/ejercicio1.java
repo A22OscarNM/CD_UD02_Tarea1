@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 /*
  * Signo del zodíaco
  * Crea que al introducir el año que naciste te devuelva
@@ -21,3 +23,19 @@ tabla:
 11 - Cabra 
 
  */
+
+
+public class ejercicio1{
+    public static void main(String[] args){
+        System.out.println("Escribe el año en el que naciste");
+        Scanner sc = new Scanner(System.in);
+        int anho = sc.nextInt();
+
+
+        int resultado = anho%12;
+
+        String a[] = {"Mono", "Gallo", "Perro", "Cerdo", "Rata", "Buey", "Tigre", "Conejo", "Dragon", "Serpiente", "Caballo", "Cabra"};
+        
+        System.out.println("Tu signo es " + a[resultado]);
+    }
+}
